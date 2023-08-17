@@ -298,13 +298,14 @@
 }
 #sm-banner .banner-box{
     display: flex;
+    margin-right: 100px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     background-image: url("img/banner/b17.jpg");
     min-width: 600px;
     height: 50vh;
-    background-size: cover ;
+    /* background-size: cover ; */
     background-position: center;
     padding: 30px;
 }
@@ -314,8 +315,8 @@
 }
 #sm-banner .banner-box2{
     background: url("img/banner/b10.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat; 
+     background-size: cover;
 }
 #banner3{
     display: flex;
@@ -449,7 +450,7 @@ footer .copyright{
 
  /* Shop Page */
 
-#page-header{
+.page-header{
     background-image: url("img/banner/b1.jpg");
     height: 40vh;
     width: 100%;
@@ -539,8 +540,17 @@ footer .copyright{
  /* Blog Page */
 
 
-#page-header .blog-header{
+ .blog-header {
     background-image: url("img/banner/b19.jpg");
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+   
 }
 
 #blog{
@@ -609,6 +619,38 @@ footer .copyright{
 
  /* About Page */
 
+ .about-header {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: 150px;
+    background-image: url("img/about/banner.png");
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head div{
+    padding-left: 40px;
+}
+#about-app{
+    text-align: center;
+}
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
  /* Start Media Query */
 
  @media (max-width:799px) {
@@ -777,6 +819,23 @@ footer .copyright{
         margin-bottom: 30px ;
     }
     #blog .blog-details {
+        width: 100%;
+    }
+
+
+    /* About Page */
+
+    #about-head {
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div {
+        padding-left: f0px;
+    }
+    #about-app .video{
         width: 100%;
     }
  }
